@@ -14,31 +14,29 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          child: Column(
             children: [
-              Container(
-                color: Colors.red,
-                width: 100,
+              const CircleAvatar(
+                radius: 50.0,
+                backgroundImage: AssetImage('images/avtar.jpg'),
               ),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Container(
-                    color: Colors.yellow,
-                    height: 100,
-                    width: 100,
-                  ),
-                  Container(
-                    color: Colors.green,
-                    height: 100,
-                    width: 100,
-                  ),
-                ],
+              const Text(
+                "Om Tathed",
+                style: TextStyle(
+                    fontSize: 40.0,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                    fontFamily: 'Pacifico'),
               ),
-              Container(
-                color: Colors.blue,
-                width: 100,
+              Text(
+                "FLUTTER DEVELOPER",
+                style: TextStyle(
+                  color: Colors.teal.shade100,
+                  fontSize: 20.0,
+                  fontFamily: 'SourceSansPro',
+                  letterSpacing: 2.5,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
             ],
           ),
