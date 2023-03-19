@@ -13,6 +13,17 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.teal,
+        appBar: AppBar(
+          title: Text(
+            "mi-Card",
+            style: TextStyle(
+              fontFamily: 'SourceSansPro',
+              fontSize: 23.0,
+            ),
+          ),
+          backgroundColor: Colors.teal[200],
+          centerTitle: true,
+        ),
         body: SafeArea(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
