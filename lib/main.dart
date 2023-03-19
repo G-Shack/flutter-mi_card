@@ -19,6 +19,7 @@ class MyApp extends StatelessWidget {
             style: TextStyle(
               fontFamily: 'SourceSansPro',
               fontSize: 23.0,
+              fontWeight: FontWeight.bold,
             ),
           ),
           backgroundColor: Colors.teal[200],
